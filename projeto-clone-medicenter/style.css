@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Início do Hedader 
+----------------------------------------------
+*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+nav ul, footer ul {
+    list-style-type: none;
+}
+
+nav ul a {
+    padding: 10px;
+    color: gray;
+}
+
+nav ul a:hover {
+    background-color: #00ACE4;
+    transition: all linear 0.3s;
+}
+
+nav ul, footer ul {
+    display: flex;
+}
+
+/* Fim do Hedader 
+----------------------------------------------
+*/
+
+
+/* Inicio do Main 
+----------------------------------------------
+*/
+
+#main-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #00ACE4 url('img1.jpg') top no-repeat; 
+    background-size: cover;
+    color: white;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main-text {
+    margin: 30px 0px 80px 0px;
+    max-width: 300px;
+    text-shadow: 0px 0px 1px black;
+}
+
+#main-text h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#main-areas, #middle-content, #footer-areas {
+    display: flex;
+    width: 800px;
+}
+
+.m-areas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 15px;
+    font-weight: normal;
+}
+
+.m-areas p {
+    padding: 10px 0px;
+    font-size: 13px;
+}
+
+.m-areas button {
+    width: max-content;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+#emergency {
+    background-color: #42B3E5;
+}
+
+#timetable {
+    background-color: #0384CE;
+}
+
+#op-hours {
+    background-color: #3156A3;
+}
+
+#date-time {
+    padding: 10px 0px;
+}
+
+#op-hours .opening {
+    font-size: 13px;
+}
+
+.opening {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267); 
+}
+
+section#middle, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 
+
+obs: foi realocado para cima
+
+#middle-content {
+    display: flex;
+    width: 800px;
+}
+
+*/
+
+#middle-main {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.widgets {
+    margin-bottom: 20px;
+}
+
+.widgets-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.widgets-bar {
+    width: 50px;
+    border-bottom: 2px solid #42B3E5;
+}
+
+#middle-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.news {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+    margin: 0px 10px 10px 0px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.news .small-words {
+    font-size: 10px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.notfications {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.not-1, .not-2 {
+    width: max-content;
+    padding: 8px;
+    color: white;
+    font-size: 12px;
+}
+
+.not-1 {
+    background-color: #3156A3;
+    margin-right: 3px;
+}
+
+.not-2 {
+    background-color: #00ACE4;
+}
+
+.content-area img {
+    width: 100%;
+}
+
+.content-area h3 {
+    margin: 5px 0px;
+}
+
+.content-area p {
+    font-size: 14px;
+    margin: 10px 0px 20px 0px;
+    color: gray;
+}
+
+#show-all {
+    align-self: flex-end;
+    border-bottom: 1px dotted rgba(128, 128, 128, 0.377);
+    color: #3156A3;
+}
+
+aside {
+    flex: 1;
+    font-size: 14px;
+}
+
+#primary {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#primary-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3156A3;
+    padding: 8px;
+}
+
+#primary-text, #make-app-text {
+    color: gray;
+    margin: 15px 0px;
+}
+
+#primary-buttons {
+    display: flex;
+    align-self: flex-end;
+}
+
+.buttons {
+    background-color: #3156A3;
+    margin: 0px 5px 20px 0px;
+    padding: 5px;
+}
+
+.buttons a {
+    color: white;
+}
+
+#clinics {
+    margin-bottom: 15px;
+}
+
+#clinics ul {
+    list-style-type: none;
+}
+
+#clinics ul li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.377);
+    padding: 5px;
+    color: gray;
+    font-size: 16px;
+}
+
+address {
+    font-style: normal;
+}
+
+.address-content-contacts, .up-top {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.up-top {
+    border-top: 1px  solid rgb(128, 128, 128, 0.377);
+    border-bottom: 1px  solid rgb(128, 128, 128, 0.377);
+}
+
+.address-content i {
+    display: block;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+/* Fim do Main 
+----------------------------------------------
+*/
+
+
+/* Inicio do Footer
+----------------------------------------------
+*/
+
+footer {
+    background-color: #202020;
+}
+
+#footer-areas {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.377);
+}
+
+footer .widgets {
+    color: white;
+}
+
+.footer-content {
+    flex: 1;
+}
+
+.footer-address-text {
+    margin-bottom: 5px;
+}
+
+.footer-text {
+    margin: 0px 10px 20px 0px;
+}
+
+footer ul li {
+    margin-right: 5px;
+}
+
+footer ul a {
+    color: gray;
+}
+
+footer i {
+    transition: all linear 0.3s;
+    display: block;
+    margin-right: 5px;
+}
+
+#facebook:hover {
+    color: #395593;
+}
+
+#twitter:hover {
+    color: #1C99E6;
+}
+
+#instagram:hover {
+    color: #ECCA70;
+}
+
+#email:hover {
+    color: #DE4032;
+}
+
+#footer-areas p, #footer-address, .posts, .tweets {
+    font-size: 12px;
+}
+
+#footer-areas {
+    color: gray;
+}
+
+.f-areas {
+    padding: 20px 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.f-areas p {
+    margin-top: 15px;
+}
+
+#health-insurance {
+    background-color: #00ACE4;
+}
+
+#footer-address {
+    margin-top: 20px;
+}
+
+.footer-address-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+#medical-records {
+    background-color: #0384CE;
+}
+
+.posts, .tweets {
+    display: flex;
+    margin: 20px 5px 0px 0px;
+    color: white;
+}
+
+.post-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.public-time {
+    color: #1C99E6;
+    margin-top: 5px;
+}
+
+#online-bill-pay {
+    background-color: #3156A3;
+}
+
+.tweets .post-text {
+    color: gray;
+}
+
+/* Fim do Footer 
+----------------------------------------------
+*/
+
+
+/*--------------------------------------------*/
+/* INICIO DOS MEDIA-QUERIES */
+/*--------------------------------------------*/
+
+
+@media (max-width: 890px) {
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+    }
+
+    .menu-line {
+        background-color: #00ACE4;
+        height: 3px;
+        margin: 4px 0px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+    }
+
+    #main-areas, #middle-content, #footer-areas {
+        display: flex;
+        width: 750px;
+    }
+
+    
+}
+
+@media (max-width: 766px) {
+    #main-text {
+        margin-left: 20px;
+    }
+    
+    #main-areas, #middle-content, #footer-areas {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #main-areas {
+        padding: 0;
+    }
+
+    .footer-content {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+

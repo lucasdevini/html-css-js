@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: max-content;
+    background-color: #8F00B3;
+}
+
+main {
+    width: 30vw;
+}
+
+#to-do {
+    background-color: greenyellow;
+    margin: 20px 0px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+#titulo-lista {
+    padding-top: 20px;
+    margin: 0px 50px 15px 50px ;
+}
+
+#listagem {
+    margin: 0px 50px 0px 50px;
+}
+
+#titulo-lista input {
+    background-color: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #8F00B3;
+    border-bottom: 2px solid #8F00B3;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+h1 {
+    display: none;
+    border-bottom: 2px solid #8F00B3;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-style: italic;
+    color: #8F00B3;
+    cursor: pointer;
+}
+
+#listagem ul {
+    list-style-type: none;
+}
+
+#adicionar-item {
+    width: max-content;
+    padding: 6px;
+    border-bottom: 3px solid white;
+    border-radius: 8px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    background-color: #D62EFF;
+}
+
+#adicionar-item:hover {
+    color: #D62EFF;
+    background-color: white;
+    border-bottom: 3px solid #D62EFF;
+    transition: all 0.2s linear;
+}
+
+#listagem ul li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#listagem input {
+    font-size: 15px;
+    border-bottom: 2px solid #D62EFF;
+}
+
+#listagem li:hover input {
+    border-bottom: 2px solid #72B310;
+    transition: all linear 0.2s;
+}
+
+#listagem li:hover .marcador {
+    border: 2px solid #72B310;
+    transition: all linear 0.2s;
+}
+
+.marcador-nome {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.marcador {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    border: 2px solid #D62EFF;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nome-li {
+    max-width: 280px;
+    word-break: break-all;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.marcado {
+    background-color: red;
+}
+
+.listado {
+    text-decoration: line-through;
+}
+
+.editar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editar-li, .remover-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;  
+    color: white;
+}
+
+.editar-li {
+    background-color: #72B310;
+}
+
+.remover-li {
+    background-color: #72B310;
+}
+
+.editar-li, .remover-li {
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.editar-li:hover {
+    color: #72B310;
+    background-color: white;
+    border-right: 3px solid #72B310;
+    border-bottom: 3px solid #72B310;
+    transition: all 0.2s linear;
+}
+
+.remover-li:hover {
+    color: #72B310;
+    background-color: white;
+    border-right: 3px solid #72B310;
+    border-bottom: 3px solid #72B310;
+    transition: all 0.2s linear;
+}
+
+@media (max-width: 539px) {
+    main {
+        width: 90vw;
+        height: max-content;  
+    }
+
+    #to-do {
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgb(24, 23, 23);
+    }
+
+    #titulo-lista input {
+        width: 100%;
+    }
+
+    #listagem input {
+        width: 100%;
+    }
+}
+
+

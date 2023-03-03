@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício - Formulário</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div id="title">
+                <h1>Contact Form</h1>
+
+                <p>Please fill in your information and we'll be sending yout order in no time.</p>
+            </div>
+
+            <form action="destino.html" method="get">
+                <div class="form-rows">
+                    <div class="labels-container">
+                        <label for="iname">Your Name</label>
+                    </div>
+
+                    <div class="inputs-container">
+                        <input type="text" name="first-name" id="ifirst-name" maxlength="28" placeholder="first-name"required>
+
+                        <input type="text" name="last-name" id="ilast-name" maxlength="28" placeholder="last-name" required>
+                    </div>
+                </div>
+
+                <div class="form-rows">
+                    <div class="labels-container">
+                        <label for="iemail">Your Email</label>
+                    </div>
+
+                    <div class="inputs-container">
+                        <input type="email" name="email" id="iemail" maxlength="40" placeholder="example@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-rows">
+                    <div class="labels-container">
+                        <label for="itel-ddd">Phone*</label>
+                    </div>
+
+                    <div class="inputs-container">
+                        <input type="tel" name="tel-ddd" id="itelddd" placeholder="(xx)" required>
+
+                        <input type="tel" name="telfirst" id="itel-first" placeholder="(x-xxxx)" required>
+
+                        <input type="tel" name="tel-last" id="itel-last" placeholder="(xxxx)" required>
+                    </div>
+                </div>
+
+                <div class="form-rows">
+                    <div class="labels-container">
+                        <label for="isub">Message Subject</label>
+                    </div>
+
+                    <div class="inputs-container">
+                        <select name="sub" id="isub" required>
+                            <option value="a" selected>Other</option>
+                            <option value="b">.</option>
+                            <option value="c">..</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-rows">
+                    <div class="labels-container">
+                        <label for="itexta">Message*</label>
+                    </div>
+
+                    <div class="inputs-container">
+                        <textarea name="texta" id="itexta" style="resize: none;"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-rows" id="final-row">
+                    <div class="labels-container">
+                        <label for="iverification">Verification</label>
+                    </div>
+
+                    <div class="inputs-container">
+                        <input type="checkbox" name="verification" id="iverification" required>
+                    </div>
+                </div>
+
+                <div class="form-rows">
+                    <input type="submit" value="Enviar Formulário">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

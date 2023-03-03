@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/340c674620.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector("#menu-mobile").addEventListener("click", function(){
+                if(document.querySelector("nav ul").style.display == 'flex') {
+                    document.querySelector("nav ul").style.display = 'none';
+                } else {
+                    document.querySelector("nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/iron-man.ico" type="image/x-icon">
+
+    <title>Tributo a Tony Stark</title>
+</head>
+<body>
+    <header>  
+        <div id="header-image">
+            <img src="imagens/Iron_Man_icon-icons.com_54170.png" alt="capacete do homem de ferro">
+        </div>
+
+        <nav>
+            <div id="menu-mobile">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#presentation" target="_self">Quem foi ?</a>
+                </li>
+                <li>
+                    <a href="#achievements" target="_self">Grandes feitos</a>
+                </li>
+                <li>
+                    <a href="#other-achievements" target="_self">Outros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presentation">
+            <div id="presentation-text">
+                <h1>
+                    Antony Edward Stark <br> <span id="iron-man">(Homem de Ferro)</span>
+                </h1>
+
+                <p>
+                    Gênio, bilionário, playboy, filantropo e o melhor vingador.
+                </p>
+            </div>
+
+            <div id="presentation-image">
+                <picture>
+                    <source media="(max-width: 719px)" srcset="imagens/responsive-tony-stark.png">
+                    <source media="(min-width: 720px)" srcset="">
+                    <img src="imagens/presentation.png" alt="homem de ferro">
+                </picture>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Grandes Feitos no UCM</h2>
+
+            <div id="great-achievement-1" class="great-achievements">
+                <div class="great-achievements-images">
+                    <img src="imagens/achievements-1-test.png" alt="Homem de ferro">
+                </div>
+                <div class="great-achievements-texts">
+                    <h3>
+                        O portal
+                    </h3>
+
+                    <p>
+                        A batalha de Nova York no primeiro filme dos Vingadores é incrível, mas ninguém imaginava que ela deixaria tantas sequelas em Tony Stark.
+                    </p>    
+
+                    <p>    
+                        O momento em que o herói guia um míssil para o portal de onde os Chitauri estavam saindo, fez com que Stark percebesse a real dimensão da ameaça que estava enfrentando, e entendesse que talvez não estivesse pronto para aquilo.
+                    </p>
+                </div>
+            </div>
+
+            <div id="great-achievement-2" class="great-achievements">
+                <div class="great-achievements-texts">
+                    <h3>
+                        Possibilitou a viagem no tempo
+                    </h3>
+                    <p>
+                        Em Vingadores: Ultimato, se Tony não tivesse aderido ao plano do Assalto Temporal, os trilhões de pessoas que morreram no estalo de Thanos teriam permanecido mortos.
+                    </p>    
+                        
+                    <p>    
+                        Mais cedo, Hulk não conseguiu descobrir as configurações corretas para a viagem no tempo, fazendo com que o Homem-Formiga se transformasse em jovem e velho. Felizmente, Tony chegou para consertar as coisas.
+                    </p>   
+                        
+                    <p>    
+                        Quando chegou ao quartel-general dos Vingadores, Tony já havia criado o GPS de viagem no tempo necessário para que a equipe viajasse no tempo. Embora ele próprio estivesse pessimista, o Homem de Ferro não atendeu a probabilidades impossíveis.
+                    </p>
+                </div>
+                <div class="great-achievements-images">
+                    <img id="great-achievements-2-image" src="imagens/achievements-2.png" alt="Tony Stark">
+                </div>
+            </div>
+
+            <div id="great-achievement-3" class="great-achievements">
+                <div id="great-achievement-3-text">   
+                    <h3>
+                        O Sacrifício
+                    </h3>        
+                    <p>
+                        Ninguém antes de Thanos empunhou todas as Joias do Infinito ao mesmo tempo, o que era considerado um sonho impossível que rendeu ao vilão o rótulo de um louco. Até o Titã Louco não conseguiu essa façanha sem a Manopla.
+                    </p>
+                    <p>
+                        Apesar de saber que era morte certa, se ele usasse uma joia com as próprias mãos, Tony conseguiu assimilar todas elas em seu traje, até conseguindo pronunciar “Eu sou o Homem de Ferro”, antes de estalar os dedos e se tornar o único ser mortal a empunhar as Joias do Infinito em conjunto.
+                    </p>                                          
+                </div>
+            </div>
+
+            <div id="other-achievements">
+                <h3 id="other-button">
+                    Outros feitos <i class="fa-solid fa-caret-down"></i>
+                </h3>
+
+                <div id="others-container">
+                    <div class="others">
+                        <h4>Criou um novo elemento</h4>
+                        <img src="imagens/others-elemento.jpg" alt="homem de ferro criando novo elemento">
+                    </div>
+
+                    <div class="others">
+                        <h4>Foi mentor do Homem-aranha</h4>
+                        <img src="imagens/others-aranha.png" alt="Tony Stark e Peter Parker">
+                    </div>
+
+                    <div class="others">
+                        <h4>Salvou Sokovia</h4>
+                        <img src="imagens/others-sokovia.png" alt="Homem de ferro salvando Sokovia">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="developer">Site criado por Lucas Silva</div>
+        <div id="social-media-container">
+            Para mais, acesse:
+            <ul id="social-media">
+                <li>
+                    <a href="https://github.com/lucasdevini" target="_blank"><i class="fa-brands fa-github"></i> </a>
+                </li>
+            </ul>
+        </div> 
+    </footer>
+</body>
+</html>

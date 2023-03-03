@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background: white url('imagens/fundo-madeira.jpg') top center no-repeat fixed;
+    background-size: cover;
+}
+
+iframe {
+    background-color: none;
+    width: 173px;
+    height: 305px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+aside {
+    text-align: right;
+    margin: 20px 20px;
+}
+
+#celular {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botoes {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: red;
+    margin-bottom: 15px;
+    transition: all linear 0.2s;
+}
+
+.botoes:hover {
+    border: 1px solid white;
+    transform: translate(-3px, -3px);
+}
+
+#home {
+    background: blue url('imagens/logo-home.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#facebook {
+    background: blue url('imagens/logo-facebook.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#instagram {
+    background: blue url('imagens/logo-instagram.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#twitter {
+    background: blue url('imagens/logo-twitter.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#youtube {
+    background: blue url('imagens/logo-youtube.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#github {
+    background: blue url('imagens/logo-github.jpg') center no-repeat;
+    background-size: cover;
+}
+
+

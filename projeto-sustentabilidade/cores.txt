@@ -1,0 +1,5 @@
+verde claro: #39BD40
+
+verde escuro: #386641
+
+marrom claro: #bc6c25

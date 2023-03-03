@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: #e12443d5;
+    color: white;
+    padding: 15px 60px;
+}
+
+#menu-mobile {
+    display: none;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-bar {
+    width: 100%;
+    height: 3px;
+    margin: 10px 0px;
+    background-color: #E0D93A;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0px 20px;
+}
+
+header ul a {
+    color: white;
+}
+
+header ul a:hover {
+    border-bottom: 2px solid #E0D93A;
+}
+
+section#presentation {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 50px 50px 0px 0px;
+    margin-bottom: 60px;
+} 
+
+section#presentation #presentation-text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 20px;
+    color: #E0D93A;
+}
+
+#presentation-text h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cacfd1;
+}
+
+#presentation-text #iron-man {
+    align-self: center;
+    font-size: 30px;
+    color: #E12444;
+}
+
+#presentation-text p {
+    align-self: center;
+    font-size: 20px;
+    font-style: italic;
+    color: #fafeff;
+}
+
+section#presentation img {
+    max-width: 400px;
+    width: 100%;
+    border-bottom: 1px solid #cacfd1
+}
+
+section#achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#achievements h2, #other-achievements h3 {
+    color: #E0D93A;
+    border: 2px solid #E0D93A;
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 20px;
+}
+
+.great-achievements {
+    display: flex;
+    width: 95%;
+}
+
+.great-achievements-texts {
+    flex: 2;
+    margin: 30px;
+}
+
+.great-achievements-images {
+    width: max-content;
+    align-self: center;
+    margin: 20px 0px;
+    flex: 1;
+}
+
+.great-achievements img {
+    width: 100%;
+    border-bottom: 1px solid #cacfd1;
+}
+
+.great-achievements-texts {
+    align-self: center;
+}
+
+.great-achievements h3 {
+    font-size: 30px;
+    text-shadow: 0px 0px 1px black;
+    color: #E12444;
+}  
+
+.great-achievements p {
+    color: #fafeff;
+    max-width: 500px;
+    min-width: 250px;
+    font-size: 18px;
+    text-shadow: 0px 0px 5px black;
+    margin-top: 10px; 
+    text-align: justify;
+}
+
+.great-achievements br {
+    margin: 10px 0px;  
+}
+
+#great-achievement-1 {
+    background-color: #4861bd52;
+}
+
+#great-achievement-1 .great-achievements-texts, #great-achievement-2 .great-achievements-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#great-achievement-2 {
+    background-color: #cea55359;
+}
+
+#great-achievement-2 .great-achievements-images {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#great-achievement-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F77D27 url(imagens/im-iron-man.jpg) no-repeat;
+    background-size: cover;
+    padding: 30px 0px;
+}
+
+#great-achievement-3-text {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#great-achievement-3-text h3 {
+    align-self: center;
+}
+
+#other-achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+#others-container {
+    display: flex;
+    width: 100%;
+}
+
+.others {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+.others h4 {
+    background-color: #E12444;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.others img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #E12444;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    background-color: #171F3D;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+#developer {
+    border-bottom: 1px dotted #cacfd1;
+    margin-bottom: 5px;
+}
+
+#social-media-container {
+    display: flex;
+}
+
+footer ul i {
+    color: white;
+}
+
+footer ul i:hover {
+    color: #E0D93A;
+}
+
+@media (min-width: 720px) and (max-width: 903px) {
+    #presentation-text #iron-man {
+        align-self: flex-start;
+    } 
+    
+    #presentation-text p {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 719px) {
+    header {
+        position: fixed;
+        width: 100vw;
+    }
+
+    #menu-mobile {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        margin-top: 20px;
+        background-color: #e12443d5;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+        align-self: center;
+    }
+    
+    #presentation-text #iron-man {
+        align-self: flex-start;
+    } 
+    
+    #presentation-text p {
+        margin-left: 15px;
+    }
+
+    section#presentation #presentation-image {
+        align-self: center;
+    }
+
+    .great-achievements-texts {
+        flex: 1;
+    }
+    
+    .great-achievements-images {
+        flex: 0;
+    }
+
+    section#presentation img {
+        border-bottom: none;
+    }
+
+    #great-achievement-1 {
+        background: #E0D93A url(imagens/portal.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    #great-achievement-2 {
+        background: #E0D93A url(imagens/time-travel.jpg) left no-repeat;
+        background-size: cover;
+    }
+
+    #great-achievement-3 {
+        background: #F77D27 url(imagens/im-iron-man.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    #others-container {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+}   
+

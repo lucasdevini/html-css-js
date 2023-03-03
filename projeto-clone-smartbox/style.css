@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 767px) {
+    body {
+        background: brown url('imagens/fundo-madeira.jpg') no-repeat fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main {
+        background-color: lightgray;
+    }
+    
+    /* Início do Header */
+    
+    header {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: max-content;
+        box-shadow: inset 1px 10px 25px rgba(0, 0, 0, 0.103);
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    #header-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    #nav-bar {
+        display: flex;
+        align-items: center;    
+    }
+
+    nav {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav li {
+        padding: 15px;
+    }
+    
+    header a, nav a, main a {
+        color: black;
+        transition: all 0.3s linear;
+    }
+    
+    header a:hover, main a:hover {
+        color: #567189;
+    }
+    
+    nav a:hover {
+        color: #567189;
+        text-shadow: 0px 0px 1px #567189;;
+    }
+    
+    /* Fim do Header */
+    /* ------------------------------------------ */
+    
+    /* Início do Main */
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #what-we-do {
+        border-bottom: 1px solid none;
+        padding: 0px 10px 30px 10px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+    }
+    
+    #start {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin: 0px 0px 10px 0px;
+        padding: 0px 3px;
+    }
+    
+    #what-we-do {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2 {
+        font-weight: normal;
+        display: block;
+        align-self: center;
+        margin: 20px 0px;
+    }
+    
+    #container-jobs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px;
+        flex: 1;
+    }
+    
+    .job-img {
+        display: flex;
+        align-self: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-size: cover;
+    }
+    
+    #left, #center-left, #center-right, #right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #left {
+        background: gray url('imagens/o-que-e-paisagem.jpg');
+        background-position: bottom left; 
+    }
+    
+    #center-left {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: bottom;
+    }
+    
+    #center-right {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: center;
+    }
+    
+    #right {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: top left;
+    }
+    
+    
+    .jobs h3 {
+        display: flex;
+        align-self: center;
+        margin: 10px 0px;
+    }
+    
+    .jobs a {
+        margin-top: 10px;
+    }
+    
+    #recent-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #recent-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #recent-container #div-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    #container-recent-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #div-img img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .recent-texts {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    
+    .works-tittles {
+        display: flex;
+    }
+    
+    .works-tittles i {
+        margin-right: 10px;
+    }
+    
+    #latest-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #container-news {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px 30px 50px 30px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+    }
+    
+    .news {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        flex: 1;
+    }
+    
+    #latest-news figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px 20px 0px;
+    }
+    
+    #latest-news img {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;   
+    }
+    
+    .news-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+    
+    /* Fim do Main */
+    /* ------------------------------------------ */
+    
+    /* Início do Footer */
+    
+    address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px 30px 50px 30px;
+        background-color: none;
+        font-style: normal;
+    }
+    address h4, p {
+        margin: 10px 0px;
+    }
+    
+    footer ul li {
+        margin: 10px;
+    }
+    
+    footer a {
+        color: black;
+    }
+    
+    #twitter-icon:hover {
+        color: #00A0D1;
+        transition: all 0.2s linear;
+    }
+    
+    #facebook-icon:hover {
+        color: #3B5998;
+        transition: all 0.2s linear;
+    }
+    
+    #pinterest-icon:hover {
+        color: #910101;
+        transition: all 0.2s linear;
+    }
+    
+    
+    
+    
+    /* Fim do Footer */
+    /* ------------------------------------------ */
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    body {
+        background: brown url('imagens/fundo-madeira.jpg') no-repeat fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main {
+        background-color: lightgray;
+    }
+    
+    /* Início do Header */
+    
+    header {
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 10vh;
+        box-shadow: inset 1px 10px 25px rgba(0, 0, 0, 0.103);
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    header #header-bar,  #nav-bar {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+    }
+    
+    header i {
+        visibility: hidden;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    nav li {
+        padding: 15px;
+    }
+    
+    header a, nav a, main a {
+        color: black;
+        transition: all 0.3s linear;
+    }
+    
+    header a:hover, main a:hover {
+        color: #567189;
+    }
+    
+    nav a:hover {
+        color: #567189;
+        text-shadow: 0px 0px 1px #567189;;
+    }
+    
+    /* Fim do Header */
+    /* ------------------------------------------ */
+    
+    /* Início do Main */
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #what-we-do {
+        border-bottom: 1px solid none;
+        padding: 0px 10px 30px 10px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+    }
+    
+    #start {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin: 0px 0px 10px 0px;
+        padding: 0px 3px;
+    }
+    
+    #what-we-do {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2 {
+        font-weight: normal;
+        display: block;
+        align-self: center;
+        margin: 20px 0px;
+    }
+    
+    #container-jobs {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px;
+        flex: 1;
+    }
+    
+    .job-img {
+        display: flex;
+        align-self: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-size: cover;
+    }
+    
+    #left, #center-left, #center-right, #right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #left {
+        background: gray url('imagens/o-que-e-paisagem.jpg');
+        background-position: bottom left; 
+    }
+    
+    #center-left {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: bottom;
+    }
+    
+    #center-right {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: center;
+    }
+    
+    #right {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: top left;
+    }
+    
+    
+    .jobs h3 {
+        display: flex;
+        align-self: center;
+        margin: 10px 0px;
+    }
+    
+    .jobs a {
+        margin-top: 10px;
+    }
+    
+    #recent-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #recent-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #recent-container #div-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    #container-recent-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #div-img img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .recent-texts {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    
+    .works-tittles {
+        display: flex;
+    }
+    
+    .works-tittles i {
+        margin-right: 10px;
+    }
+    
+    #latest-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #container-news {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 30px 50px 30px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+    }
+    
+    .news {
+        display: flex;
+        flex: 1;
+    }
+    
+    #latest-news figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px 20px 0px;
+    }
+    
+    #latest-news img {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;   
+    }
+    
+    .news-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+    
+    /* Fim do Main */
+    /* ------------------------------------------ */
+    
+    /* Início do Footer */
+    
+    address {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+        background-color: none;
+        font-style: normal;
+    }
+
+    address h4, p {
+        margin: 10px 0px;
+    }
+    
+    footer ul li {
+        margin: 10px;
+    }
+    
+    footer a {
+        color: black;
+    }
+    
+    #twitter-icon:hover {
+        color: #00A0D1;
+        transition: all 0.2s linear;
+    }
+    
+    #facebook-icon:hover {
+        color: #3B5998;
+        transition: all 0.2s linear;
+    }
+    
+    #pinterest-icon:hover {
+        color: #910101;
+        transition: all 0.2s linear;
+    }
+    
+
+    /* Fim do Footer */
+    /* ------------------------------------------ */
+}
+
+@media (min-width: 980px) {
+    #container {
+        margin: 40px;
+        border-radius: 5px;
+    }
+    
+    body {
+        background: brown url('imagens/fundo-madeira.jpg') no-repeat fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main {
+        background-color: lightgray;
+    }
+    
+    /* Início do Header */
+    
+    header {
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 10vh;
+        box-shadow: inset 1px 10px 25px rgba(0, 0, 0, 0.103);
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    header #header-bar,  #nav-bar {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+    }
+    
+    header i {
+        visibility: hidden;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    nav li {
+        padding: 15px;
+    }
+    
+    header a, nav a, main a {
+        color: black;
+        transition: all 0.3s linear;
+    }
+    
+    header a:hover, main a:hover {
+        color: #567189;
+    }
+    
+    nav a:hover {
+        color: #567189;
+        text-shadow: 0px 0px 1px #567189;;
+    }
+    
+    /* Fim do Header */
+    /* ------------------------------------------ */
+    
+    /* Início do Main */
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #what-we-do {
+        border-bottom: 1px solid none;
+        padding: 0px 10px 30px 10px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+    }
+    
+    #start {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin: 0px 0px 10px 0px;
+        padding: 0px 3px;
+    }
+    
+    #what-we-do {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2 {
+        font-weight: normal;
+        display: block;
+        align-self: center;
+        margin: 20px 0px;
+    }
+    
+    #container-jobs {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px;
+        flex: 1;
+    }
+    
+    .job-img {
+        display: flex;
+        align-self: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-size: cover;
+    }
+    
+    #left, #center-left, #center-right, #right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #left {
+        background: gray url('imagens/o-que-e-paisagem.jpg');
+        background-position: bottom left; 
+    }
+    
+    #center-left {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: bottom;
+    }
+    
+    #center-right {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: center;
+    }
+    
+    #right {
+        background: gray url('imagens/o-que-e-paisagem.jpg') ;
+        background-position: top left;
+    }
+    
+    
+    .jobs h3 {
+        display: flex;
+        align-self: center;
+        margin: 10px 0px;
+    }
+    
+    .jobs a {
+        margin-top: 10px;
+    }
+    
+    #recent-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #recent-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #recent-container #div-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    #container-recent-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #div-img img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .recent-texts {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    
+    .works-tittles {
+        display: flex;
+    }
+    
+    .works-tittles i {
+        margin-right: 10px;
+    }
+    
+    #latest-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #container-news {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 30px 50px 30px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+    }
+    
+    .news {
+        display: flex;
+        flex: 1;
+    }
+    
+    #latest-news figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px 20px 0px;
+    }
+    
+    #latest-news img {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;   
+    }
+    
+    .news-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+    
+    /* Fim do Main */
+    /* ------------------------------------------ */
+    
+    /* Início do Footer */
+    
+    address {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+        background-color: none;
+        font-style: normal;
+    }
+
+    address h4, p {
+        margin: 10px 0px;
+    }
+    
+    footer ul li {
+        margin: 10px;
+    }
+    
+    footer a {
+        color: black;
+    }
+    
+    #twitter-icon:hover {
+        color: #00A0D1;
+        transition: all 0.2s linear;
+    }
+    
+    #facebook-icon:hover {
+        color: #3B5998;
+        transition: all 0.2s linear;
+    }
+    
+    #pinterest-icon:hover {
+        color: #910101;
+        transition: all 0.2s linear;
+    }
+    
+
+    /* Fim do Footer */
+    /* ------------------------------------------ */
+}

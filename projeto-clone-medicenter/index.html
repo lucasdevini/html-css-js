@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/340c674620.js" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector("#menu-mobile").addEventListener("click", function(){
+                if(document.querySelector("nav ul").style.display == 'flex') {
+                    document.querySelector("nav ul").style.display = 'none';
+                } else {
+                    document.querySelector("nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo Medicenter">
+        </div>
+        
+        <nav>
+            <div id="menu-mobile">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <ul id="nav-list">
+                <a href="#">
+                    <li>HOME</li>
+                </a>
+                <a href="#">
+                    <li>BLOG</li>
+                </a>
+                <a href="#">
+                    <li>PAGES</li>
+                </a>
+                <a href="#">
+                    <li>DEPARTMENTS</li>
+                </a>
+                <a href="#">
+                    <li>TIMETABLE</li>
+                </a>
+                <a href="#">
+                    <li>GALLERY</li>
+                </a>
+                <a href="#">
+                    <li>CONTACT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="start">
+            <div id="main-image">
+                <div id="main-content">
+                    <div id="main-text">
+                        <h2>
+                            Top notch experience
+                        </h2>
+                        <p>
+                            Medicenter is a responsive template perfetc for all screen sizes
+                        </p>
+                    </div>
+                    <div id="main-areas">
+                        <div id="emergency" class="m-areas">
+                            <div class="m-areas-text">
+                                <h3>Emergency Case</h3>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus harum odit incidunt?
+                                </p>
+                            </div>
+                            <button>
+                                Read more <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div id="timetable" class="m-areas">
+                            <div class="m-areas-text">
+                                <h3>
+                                    Doctors Timetable
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, distinctio. Repudiandae nulla magni nesciunt ratione.
+                                </p>
+                            </div>
+                            <button>
+                                Read more <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div id="op-hours" class="m-areas">
+                            <h3>
+                                Opening Hours
+                            </h3>
+                            <div id="date-time">
+                                <div class="opening">
+                                    <div class="days">
+                                        Monday - Friday
+                                    </div>
+                                    <div class="hours">
+                                        08:00 - 17:00
+                                    </div>
+                                </div>
+                                <div class="opening">
+                                        <div class="days">
+                                            Saturday
+                                        </div>
+                                        <div class="hours">
+                                            09:00 - 17:30
+                                        </div>
+                                </div>
+                                <div class="opening">
+                                    <div class="days">
+                                        Sunday
+                                    </div>
+                                    <div class="hours">
+                                        09:30 - 15:00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="middle">
+            <div id="middle-content">
+                <div id="middle-main">
+                    <div class="widgets">
+                        <div class="widgets-text">
+                            Latest News
+                        </div>
+                        <div class="widgets-bar">
+                        </div>
+                    </div>
+                    <div id="middle-main-content">
+                        <div class="news">
+                            <div class="notfications">
+                                <div class="not-1">
+                                    12 DEC 12
+                                </div>
+                                <div class="not-2">
+                                    2
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <img src="medico-atendendo.jpg" alt="atendimento médico">
+                                <h3>
+                                    Lorem ipsum dolor sit amet.
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor porro temporibus, excepturi nesciunt quo inventore deleniti amet veritatis, nisi vero autem magnam velit quisquam possimus fuga maiores culpa qui ea!
+                                </p>
+                            </div>
+                            <div class="small-words">
+                                Posted in <a class="sub">General</a>, <a class="sub">Outpatient surgery</a>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="notfications">
+                                <div class="not-1">
+                                    11 DE C 12
+                                </div>
+                                <div class="not-2">
+                                    8
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <img src="medico-atendendo.jpg" alt="atendimento médico">
+                                <h3>
+                                    Lorem ipsum dolor sit amet.
+                                </h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores distinctio possimus eius odit autem rem laborum tempora eum voluptatum mollitia temporibus est, nulla iusto nam quis iure ipsam illo culpa.
+                                </p>
+                            </div>
+                            <div class="small-words">
+                                Posted in <a class="sub">General</a>, <a class="sub">Outpatient surgery</a>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="notfications">
+                                <div class="not-1">
+                                    12 DEC 12
+                                </div>
+                                <div class="not-2">
+                                    3
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <img src="medico-atendendo.jpg" alt="atendimento médico">
+                                <h3>
+                                    Lorem ipsum dolor sit amet.
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tenetur officiis nostrum quia beatae tempore eveniet, iste exercitationem tempora, perferendis dolor doloremque quibusdam vel dolores nemo voluptate delectus omnis? Laudantium!
+                                </p>
+                            </div>
+                            <div class="small-words">
+                                Posted in <a class="sub">General</a>, <a class="sub">Outpatient surgery</a>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="notfications">
+                                <div class="not-1">
+                                    11 DEC 12
+                                </div>
+                                <div class="not-2">
+                                    5
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <img src="medico-atendendo.jpg" alt="atendimento médico">
+                                <h3>
+                                    Lorem ipsum dolor sit amet.
+                                </h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores excepturi nisi aliquam reiciendis doloribus tempora ut corrupti fugit quae. Vero aliquam ipsam aut quaerat cumque rerum cum praesentium placeat impedit!
+                                </p>
+                            </div>
+                            <div class="small-words">
+                                Posted in <a class="sub">General</a>, <a class="sub">Outpatient surgery</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" id="show-all">Show all <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <aside>
+                    <div class="widgets">
+                        <div class="widgets-text">
+                            Departments
+                        </div>
+                        <div class="widgets-bar">
+                        </div>
+                    </div>
+                
+                    <div id="primary">
+                        <div id="primary-bar">
+                            Primary Health Care <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div id="primary-text">
+                            <img src="" alt="">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime exercitationem a?
+                        </div>
+                        <div id="primary-buttons">
+                            <div class="buttons">
+                                <a href="#">Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="buttons">
+                                <a href="#">Timetable <i class="fa-solid fa-arrow-right"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="clinics">
+                        <ul>
+                            <li>
+                                Pediactric Clinic <i class="fa-solid fa-plus"></i>
+                            </li>
+                            <li>
+                                Outpatient Sugery <i class="fa-solid fa-plus"></i>
+                            </li>
+                            <li>
+                                Gynaecological Clinic <i class="fa-solid fa-plus"></i>
+                            </li>
+                            <li>
+                                Cardiac Clinic <i class="fa-solid fa-plus"></i>
+                            </li>
+                            <li>
+                                laryngological Clinic <i class="fa-solid fa-plus"></i>
+                            </li>
+                            <li>
+                                Ophthalmology Clinic <i class="fa-solid fa-plus"></i>
+                            </li>
+                            <li>
+                                Dental Clinic <i class="fa-solid fa-plus"></i>
+                            </li>
+                            <li>
+                                Outpatient Rehabilition <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="Make-app">
+                        <div class="widgets">
+                            <div class="widgets-text">
+                                Meake An Appointment
+                            </div>
+                            <div class="widgets-bar">
+                            </div>
+                        </div>
+
+                        <div id="make-app-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia.
+                        </div>
+                        
+                        <address>
+                            <div class="address-content" >
+                                <div class="up-top">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <div class="adress-content-text">by phone: 1-800-643-4300</div>
+                                </div>
+                            </div>
+
+                            <div class="address-content">
+                                <div class="address-content-contacts">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div class="adress-content-text">by e-mail: <a href="#">medicenter@gmail.com</a></div>
+                                </div>
+                            </div>
+<div></div>
+                            <div class="address-content" >
+                                <div class="up-top">
+                                    <i class="fa-brands fa-wpforms"></i>
+                                    <div class="adress-content-text">or <a href="#">fill in the form</a> on our contact page</div>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-areas">
+            <div class="footer-content">
+                <div id="health-insurance" class="f-areas">
+                    <h3>Health Insurence</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing. <i class="fa-solid fa-arrow-right"></i></p>
+                </div>    
+                    
+                <div class="widgets">
+                        <div class="widgets-text">
+                            Medicenter Clinic
+                        </div>
+                        <div class="widgets-bar">
+                        </div>
+                </div>
+                
+                <div class="footer-text">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, unde?
+                    </p>
+
+                    <div id="footer-address">
+                        Medicenter clinics
+                        <div class="footer-address-text">
+                            <span class="footer-address-places">33 Farlene Street</span> <span class="footer-address-contacts">+123 655 655</span>
+                        </div>
+                        <div class="footer-address-text">
+                            <span class="footer-address-places">Keilor East</span> <span class="footer-address-contacts">+123 755 755</span>
+                        </div>
+                        <div class="footer-address-text">
+                            <span class="footer-address-places">VIC 3033, Australia</span> <span class="footer-address-contacts">medicenter@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <ul id="social-media">
+                    <li>
+                        <a href="#"><i id="facebook" class="fa-brands fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i id="twitter" class="fa-brands fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i id="instagram" class="fa-brands fa-instagram-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i id="email" class="fa-solid fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <div id="medical-records" class="f-areas">
+                    <h3>Medical Records</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+
+                <div class="widgets">
+                    <div class="widgets-text">
+                        Latest Posts
+                    </div>
+                    <div class="widgets-bar">
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <i class="fa-solid fa-arrow-right"></i> 
+                    <div class="post-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, qui.
+                        <div class="public-time">
+                            about a year ago
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <i class="fa-solid fa-arrow-right"></i> 
+                        <div class="post-text">Lorem ipsum dolor sit amet.
+                        <div class="public-time">
+                        9 months ago
+                    </div>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <i class="fa-solid fa-arrow-right"></i> 
+                    <div class="post-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quo.
+                        <div class="public-time">
+                            10 months ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div id="online-bill-pay" class="f-areas">
+                    <h3>Online Bill Pay</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+
+                <div class="widgets">
+                    <div class="widgets-text">
+                        Latest Tweets
+                    </div>
+                    <div class="widgets-bar">
+                    </div>
+                </div>
+
+                <div class="tweets">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <div class="post-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        <div class="public-time">
+                            11 days ago
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <div class="post-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati non aliquid tenetur perspiciatis officiis!
+                        <div class="public-time">
+                            11 days ago
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <div class="post-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, veniam aut exercitationem inventore quo nesciunt.
+                        <div class="public-time">
+                            22 days ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
